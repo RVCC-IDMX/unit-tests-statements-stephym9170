@@ -12,7 +12,7 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  return typeof str === 'string';
 }
 
 /**
@@ -21,7 +21,7 @@ function isString(str) {
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  // write your code here & return
+  return str === '';
 }
 
 /**
@@ -33,7 +33,10 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  // write your code here & return
+  if (num === 0) {
+    return `Hello ${name}`;
+  }
+  return `Bye ${name}`;
 }
 
 /**
@@ -43,8 +46,12 @@ function sayHelloOrBye(name, num) {
  * @returns {boolean} - true if the strings are the same, false otherwise
  * ? [JavaScript: The Definitive Guide, Chapter 4.9.2](https://bit.ly/3Cvjcw2)
  */
+// eslint-disable-next-line consistent-return
 function compareStrings(str1, str2) {
-  // write your code here & return
+  if (str1 === str2) {
+    return true;
+  }
+  return false;
 }
 
 module.exports = {

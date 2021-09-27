@@ -14,7 +14,7 @@
  * @returns {number} - The sum of the two numbers
  */
 function sum(a, b) {
-  // write your code here & return value
+  return a + b;
 }
 
 /**
@@ -24,7 +24,7 @@ function sum(a, b) {
  * @returns {number} - The sum of the two numbers
  */
 function betterSum(x, y) {
-  // write your code here & return value
+  return +x + +y;
 }
 
 /**
@@ -37,7 +37,7 @@ function betterSum(x, y) {
  * ? computes the first operand modulo the second operand
  */
 function remainder(number, divisor) {
-  // write your code here & return value
+  return number % divisor;
 }
 module.exports = {
   sum,
